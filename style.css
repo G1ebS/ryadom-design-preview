@@ -26,3 +26,22 @@ body{background:#f7f6fc}body:has(.theme-dark){background:#0d001a}.theme-dark .ap
 .app-screen.c .c-feature-visit{align-items:center}
 .app-screen.c .c-place-footer button{line-height:1.2}
 .app-screen.c .app-top{position:relative;justify-content:space-between}.app-screen.c .app-top .brand{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}.app-screen.c .app-top .back{flex:0 0 44px}.app-screen.c .app-top .top-actions{margin-left:auto}
+.app-screen.c .profile-theme{padding:18px;margin:18px 0 23px}
+.app-screen.c .profile-theme>strong{display:block;font-size:15px}
+.app-screen.c .profile-theme>.mini{margin:4px 0 14px}
+.profile-theme-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.profile-theme-options button{border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:14px;min-height:92px;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;font-weight:800;cursor:pointer}
+.profile-theme-options button.selected{border-color:#471aff;background:var(--light);box-shadow:0 0 0 1px #471aff}
+.theme-swatch{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;font-size:20px}
+.theme-swatch.light{background:#ede9ff;color:#471aff}
+.theme-swatch.dark{background:#2d2054;color:#fff}
+.theme-dark .profile-theme-options button.selected{border-color:#b3a3ff;box-shadow:0 0 0 1px #b3a3ff}
+.theme-dark .theme-swatch.light{background:#f8f7fd;color:#471aff}
+.master-calendar{padding:16px;margin:16px 0 22px}
+.master-month-head{display:grid;grid-template-columns:38px 1fr 38px;align-items:center;text-align:center;gap:6px;margin-bottom:18px}
+.master-month-head button{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font-size:28px;line-height:1}
+.master-month-head strong,.master-month-head span{display:block}.master-month-head strong{font-size:17px;text-transform:capitalize}.master-month-head span{font-size:11px;color:var(--muted);margin-top:2px}
+.master-days,.master-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;text-align:center}.master-days{margin-bottom:6px;color:var(--muted);font-size:11px;font-weight:800}
+.master-grid button{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;aspect-ratio:1;border:1px solid transparent;background:transparent;color:var(--ink);border-radius:12px;padding:2px;font-weight:800;line-height:1}.master-grid button:hover{background:var(--light)}.master-grid button.selected{background:var(--accent);color:#fff}.master-grid button small{display:grid;place-items:center;width:17px;height:17px;border-radius:50%;background:var(--light);color:var(--accent);font-size:10px;line-height:1}.master-grid button.selected small{background:#fff;color:#471aff}.master-grid button:not(.selected):has(small){border-color:var(--line)}
+.master-agenda-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px}.master-agenda-title h2{margin:0;text-transform:capitalize}.master-agenda-title>span{color:var(--muted);font-size:12px;white-space:nowrap}.master-appointment{display:grid;grid-template-columns:52px 1fr 14px;align-items:center;gap:10px;text-align:left;width:100%;padding:15px;margin-bottom:9px;color:var(--ink);border:1px solid var(--line);cursor:pointer}.master-appointment .master-time{font-size:15px;font-weight:800;color:var(--accent)}.master-appointment strong,.master-appointment small{display:block}.master-appointment small{color:var(--muted);font-size:11px;margin-top:4px}.master-no-appointments{padding:19px;color:var(--muted)}
+.desktop-product .master-calendar{max-width:580px}.desktop-product .master-agenda{max-width:580px}
