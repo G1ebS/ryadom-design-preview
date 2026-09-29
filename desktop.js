@@ -2,7 +2,7 @@ function desktopLinks(){
   if(state.role==='master')return [['masterDay','Мой день'],['masterVisit','Визит'],['role','Сменить кабинет']];
   if(state.role!=='client')return [['workHome','Сегодня'],['calendar','Календарь'],['customers','Клиенты'],['live','Живое окно'],['catalog','Услуги'],['schedule','График'],['analytics','Статистика'],['programs','Награды'],['workPromos','Акции'],['access','Команда']];
   if(state.concept==='b')return [['home','Поиск времени'],['discover','Результаты'],['bookings','Мои визиты'],['waitlist','Живое окно'],['offers','Предложения'],['profile','Профиль']];
-  if(state.concept==='c')return [['home','Мои места'],['discover','Поиск салона'],['salon','Салон'],['bookings','Мои визиты'],['loyalty','Мои бонусы'],['events','События'],['profile','Профиль']];
+  if(state.concept==='c')return [['home','Мои места'],['salon','Салон'],['bookings','Мои визиты'],['loyalty','Мои бонусы'],['events','События'],['profile','Профиль']];
   if(state.concept==='bc')return [['home','Поиск и места'],['discover','Карточки салонов'],['salon','Мой салон'],['bookings','Мои визиты'],['waitlist','Живое окно'],['loyalty','Награды'],['profile','Профиль']];
   return [['home','Главная'],['discover','Найти салон'],['bookings','Мои записи'],['waitlist','Живое окно'],['loyalty','Награды'],['events','События'],['profile','Профиль']];
 }
